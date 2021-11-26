@@ -36,7 +36,7 @@ import {
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
 const firebaseConfig = {
-  apiKey: "AIzaSyBuD_iYEz1jHeJOd1zqSTo9B0Ps9qv4Ryo",
+  apiKey: "",
   authDomain: "pitemp-7dfee.firebaseapp.com",
   projectId: "pitemp-7dfee",
   storageBucket: "pitemp-7dfee.appspot.com",
