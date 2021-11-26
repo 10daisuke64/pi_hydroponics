@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>no title</title>
+  <title>Pi Hydroponics</title>
   <meta name="format-detection" content="telephone=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,37 +34,56 @@
         <div class="result">
           <div class="result-box">
             <div class="result-box-inner">
-              <h2 class="result-box__head">更新履歴</h2>
+              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">更新履歴</h2>
               <ul id="js-history" class="history"></ul>
-              <h2 class="result-box__head">水やり履歴</h2>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner">
+              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">水やり履歴</h2>
               <ul id="js-waterhistory" class="history"></ul>
             </div>
           </div>
 
           <div class="result-box">
-            <div class="result-box-inner">
-              <h2 class="result-box__head">温度</h2>
-              <div id="js-temp" class="temp"></div>
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/temp.svg" width="8" height="15">気温</h2>
+              <div id="js-temp" class="temp circle"></div>
             </div>
           </div>
 
           <div class="result-box">
-            <div class="result-box-inner">
-              <h2 class="result-box__head">湿度</h2>
-              <div id="js-hum" class="hum"></div>
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/hum.svg" width="10" height="13">湿度</h2>
+              <div id="js-hum" class="hum circle"></div>
             </div>
           </div>
 
-          <div class="result-box">
+          <div class="result-box result-box--wide">
             <div class="result-box-inner result-box-inner--chart">
               <canvas id="js-chart" width="200" height="200"></canvas>
             </div>
           </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/dist.svg" width="15" height="15">水位</h2>
+              <div id="js-dist" class="dist circle"></div>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/light.svg" width="15" height="15">照度</h2>
+              <div id="js-lit" class="light circle"></div>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section>
-
   </main>
   <!-- //main -->
 
@@ -78,13 +97,9 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
   <script src="./js/jquery.circliful.min.js"></script>
   <script type="module" src="./js/index.js"></script>
-  <script src="./js/common.js"></script>
 </body>
 
 </html>
