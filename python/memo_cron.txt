@@ -1,0 +1,3 @@
+LANG=ja_JP.eucJP
+PATH=/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games 
+0 */1 * * * export LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1.2.0; /usr/bin/python /home/pi/firebase/firebase_pitemp.py 2> /home/pi/error.log

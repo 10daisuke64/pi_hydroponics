@@ -8,7 +8,7 @@ from sensor.VL6180 import VL6180X
 from sensor.MCP300X import MCP300X
 
 # Use a service account
-cred = credentials.Certificate('serviceAccountKey.json')
+cred = credentials.Certificate('/home/pi/firebase/serviceAccountKey.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
     
