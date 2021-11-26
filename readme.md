@@ -5,6 +5,7 @@
 - 将来的に花卉栽培農家をやる夢があり,その時にスマート農業として生かせるような,小スケールのプロトタイプを作ろうと考えた.
 
 ## プロダクトの内容
+![Hydroponics](https://raw.githubusercontent.com/10daisuke64/images/main/hydroponics.png)
 - Raspberry Pi 4 に各センサーモジュール,リレースイッチなどを接続し,温度・湿度・照度・水位を測定するPythonプログラムを作成した.
 - また,水位が一定以下の場合はリレースイッチがONとなりポンプが作動,培養液を補充できる.
 - 測定データはFirebaseのCloud Firestoreへ保存され,WEBサイト上で表示して育成環境を把握できる.グラフの表示にはChart.jsを使用.
